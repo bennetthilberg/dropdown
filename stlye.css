@@ -1,0 +1,39 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+#btn{
+    position: fixed;
+    top: 80px;
+}
+#btn:hover{
+    cursor: pointer;
+}
+#menu{
+    height: 45px;
+    background-color: rgb(218, 142, 0);
+    display: grid;
+    position: fixed;
+    top: -45px;
+    width: 100vw;
+    grid-template-columns: 1fr 100px 10px 100px 10px 100px 1fr;
+    align-items: center;
+    transition: transform 0.4s ease-in-out;
+}
+*{
+    font-family: Helvetica, sans-serif;
+}
+.link, .link:visited, .link:active{
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+#home{
+    grid-column: 2;
+}
+#about{
+    grid-column: 4;
+}
+#contact{
+    grid-column: -3;
+}
